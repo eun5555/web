@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>레시피</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header">
+      <!-- Logo -->
+      <h1><a href="index.html">사계</a></h1>
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; padding-right: 16px; flex-wrap: wrap;">
+        <a href="login.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">로그인</a>
+        <a href="join.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">회원가입</a>
+        </a>
+      </div>
+
+      <!-- Nav -->
+    <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">계절</a>
+            <ul>
+              <li><a href="spring.html">봄</a></li>
+              <li><a href="summer.html">여름</a></li>
+              <li><a href="autumn.html">가을</a></li>
+              <li><a href="winter.html">겨울</a></li>
+            </ul>
+          </li>
+          <li><a href="recipe.html">이달의추천</a></li>
+          <li><a href="product.html">건강식습관</a></li>
+          <li><a href="culture.html">식문화 이야기</a></li>
+          <li><a href="event.html">축제</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+    
+      <P></P>
+
+      <!-- Main -->
+<section  class="wrapper style2">
+  <div class="container">
+    <!-- 레시피 등록 폼 -->
+    <section>
+      <h3>레시피 등록</h3>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="row gtr-uniform">
+          <div class="col-12">
+            <label for="title">레시피 제목</label>
+            <input type="text" name="title" id="title" required />
+          </div>
+
+          <div class="col-12">
+            <label for="ingredients">재료</label>
+            <textarea name="ingredients" id="ingredients" rows="3" required></textarea>
+          </div>
+
+          <div class="col-12">
+            <label for="instructions">조리 방법</label>
+            <textarea name="instructions" id="instructions" rows="6" required></textarea>
+          </div>
+
+          <div class="col-12">
+            <label for="image">사진 업로드</label>
+            <input type="file" name="image" id="image" />
+          </div>
+
+          <div class="col-12">
+            <ul class="actions">
+              <li><input type="submit" value="레시피 등록" class="primary" /></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </section>
+    </section>
+    </section>
+
+      
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style4" style="text-align: center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <section>
+              <header>
+                <h2 style="margin-bottom: 1em;">소셜미디어</h2>
+              </header>
+
+              <ul class="social" style="display: flex; justify-content: center; gap: 10px; padding: 0;">
+                <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                <li><a class="icon brands fa-line" href="#"><span class="label">Line</span></a></li>
+              </ul>
+
+              <ul class="contact" style="list-style: none; padding: 0; margin-top: 1.5em;">
+                <li><h3>Address</h3><p>Anseong</p></li>
+                <li><h3>Mail</h3><p><a href="#">4season@gmail.com</a></p></li>
+                <li><h3>Phone</h3><p>(031) 670-3114</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

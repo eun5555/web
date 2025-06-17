@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>식문화</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 960px; /* 300px * 3 + 간격 */
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      position: relative;
+      width: 300px;
+      cursor: pointer;
+    }
+
+    .portfolio-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #444;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .portfolio-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .portfolio-item .overlay h3 {
+      margin: 0 0 5px 0;
+      font-weight: bold;
+    }
+
+    .portfolio-item .overlay .icons a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #a67c00;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header">
+      <!-- Logo -->
+      <h1><a href="index.html">사계</a></h1>
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; padding-right: 16px; flex-wrap: wrap;">
+        <a href="login.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">로그인</a>
+        <a href="join.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">회원가입</a>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">계절</a>
+            <ul>
+              <li><a href="spring.html">봄</a></li>
+              <li><a href="summer.html">여름</a></li>
+              <li><a href="autumn.html">가을</a></li>
+              <li><a href="winter.html">겨울</a></li>
+            </ul>
+          </li>
+          <li><a href="recipe.html">이달의추천</a></li>
+          <li><a href="product.html">건강식습관</a></li>
+          <li><a href="culture.html">식문화 이야기</a></li>
+          <li><a href="event.html">축제</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="main">
+        <div style="text-align: center;">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<header>
+											<h2>한국 전통 음식</h2>
+										</header>
+                                        <img src="images/h1.jpg" alt="김치" width="300px" height="200px">
+										<h4>김치</h4>
+										<p>김치는 무, 배추, 오이 등의 여러 채소를 소금에 절이고 양념을 버무려 발효시킨 식품이다. 
+                                            비타민과 무기질의 보고인 채소는 원 상태로 저장하기 어렵다. 
+                                            그래서 채소를 소금에 절이거나 장, 초, 향신료 등과 섞어서 새로운 맛과 향기를 생성시키면서 저장하는 방법을 개발하게 되었는데 이렇게 개발된 우리 고유의 식품이 바로 김치이다. 
+                                            김치라는 이름은 원래 ‘지(漬)’, ‘저(菹)’라고 하다가 조선 초기에 딤채라고 부르던 것에서 유래했다. 
+                                            조선시대 중엽, 고추가 수입되면서 김치에 일대 혁명이 일어났고, 19세기에 들어서 오늘날과 같은 김치가 완성되었다.
+                                        </p>
+										<section>
+                                            <img src="images/h2.jpg" alt="비빔밥" width="300px" height="200px">
+												<h4>비빔밥</h4>
+											<p>비빔밥은 흰밥에 고기볶음 · 나물 · 튀각 등의 여러 가지 반찬을 섞어 비벼 먹도록 만든 음식이다.
+                                                비빔밥은 궁중에서는 "비빔", 일반적으로는 "골동반(骨董飯)"이라 불린 보편적인 일품요리이다.
+                                                문헌에는 1800년대 말 『시의전서』에 처음 등장하지만, 그 기원은 훨씬 오래되었으며 제사 음식 문화와 관련이 깊다.                                            제사나 동제 등에서 제물을 섞어 먹는 풍습에서 유래한 것으로 추정된다.
+                                                제례 후 음복 시 여러 제찬을 밥에 섞어 먹는 문화에서 발전했다.대표적인 지역 비빔밥으로 전주비빔밥이 유명하다. </p>
+										</section>
+										<section>
+                                            <img src="images/h3.jpg" alt="발효음식" width="300px" height="200px">
+												<h4>발효음식</h4>
+											<p>발효식품은 곰팡이·세균·효모 등 미생물의 작용에 의해 유기물이 분해되어 새로운 성분을 합성하는 발효과정을 통해 만든 식품이다. 
+                                                복잡한 발효과정의 결과 원료에 함유되어 있지 않던 다양한 성분들이 생겨나면서 영양가·기호성·저장성이 향상된다. 
+                                                한국의 주요 발효식품으로는 간장·된장·고추장·청국장 등 전통 장류, 채소류 발효식품, 김치·절임류, 수산물 발효식품인 젓갈, 주류·식초 등이 있다. 
+                                                식품을 오래 보존하기 위해 만들어진 발표식품은 소화력 증진, 풍미 향상, 장내 미생물의 항상성 유지 등 여러 부가적인 이득을 줌으로써 우리 음식문화의 중심에 자리하고 있다.</p>
+										</section>
+									</article>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<header>
+                                            <a href="#" class="image featured"><img src="images/kr.jpg" alt="" /></a>
+											<h3>우리나라 지역 특산물</h3>
+										</header>
+                    <ul class="divided">
+											<li><a href="#">경기도</a></li>
+											<li><a href="#">강원도</a></li>
+											<li><a href="#">충청도</a></li>
+											<li><a href="#">전라도</a></li>
+                                            <li><a href="#">제주도</a></li>
+										</ul>
+										<footer>
+											<a href="https://www.nongsaro.go.kr/portal/ps/psz/psza/contentMain.ps?menuId=PS03343&sUpperClCode=376004&pageUnit=9&pageSize=7" class="button alt">농사로로 이동하기</a>
+										</footer>
+									</section>
+                  <section class="box">
+                                <header style="text-align: center;">
+                                    <h2>전통 조리도구 및 식기문화</h2>
+                                    <p>우리 고유의 조리 방식과 식기를 통해 조상의 지혜를 엿볼 수 있습니다.</p>
+                                </header>
+                                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap;">
+                                    <div style="width: 280px; text-align: center;">
+                                    <img src="images/d1.jpg" alt="돌솥" style="width: 80%; height: auto; border-radius: 8px;">
+                                    <h4>돌솥</h4>
+                                    <p>밥을 뜸 들이며 고소하게 지을 수 있는 전통 돌솥은 보온력이 뛰어납니다.</p>
+                                    </div>
+
+                                    <div style="width: 280px; text-align: center;">
+                                    <img src="images/d2.png" alt="옹기" style="width: 100%; height: auto; border-radius: 8px;">
+                                    <h4>옹기</h4>
+                                    <p>숨 쉬는 항아리라 불리는 옹기는 발효식품 저장에 최적화된 용기입니다.</p>
+                                    </div>
+
+                                    <div style="width: 280px; text-align: center;">
+                                    <img src="images/d3.png" alt="유기그릇" style="width: 100%; height: auto; border-radius: 8px;">
+                                    <h4>유기</h4>
+                                    <p>놋쇠로 만든 유기 식기는 멋과 위생을 모두 갖춘 전통 식기입니다.</p>
+                                    </div>
+                                </div>
+                                </section>
+							</div>
+						</div>
+            <div style="text-align: center; margin: 30px 0;">
+              <a href="culture.html" style="margin: 0 5px; text-decoration: none;">1</a>
+                            <em title="현재목록" style="font-weight: bold; font-size: 18px; margin: 0 5px;">
+                                <span>2</span>
+                            </em>
+                        </div>
+					</div>
+				</section>
+  </div>
+  
+  
+      </div>
+    </section>
+
+      
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style4" style="text-align: center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <section>
+              <header>
+                <h2 style="margin-bottom: 1em;">소셜미디어</h2>
+              </header>
+
+              <ul class="social" style="display: flex; justify-content: center; gap: 10px; padding: 0;">
+                <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                <li><a class="icon brands fa-line" href="#"><span class="label">Line</span></a></li>
+              </ul>
+
+              <ul class="contact" style="list-style: none; padding: 0; margin-top: 1.5em;">
+                <li><h3>Address</h3><p>Anseong</p></li>
+                <li><h3>Mail</h3><p><a href="#">4season@gmail.com</a></p></li>
+                <li><h3>Phone</h3><p>(031) 670-3114</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

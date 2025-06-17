@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>로그인</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header">
+      <!-- Logo -->
+      <h1><a href="index.html">사계</a></h1>
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; padding-right: 16px; flex-wrap: wrap;">
+        <a href="login.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">로그인</a>
+        <a href="join.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">회원가입</a>
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">계절</a>
+            <ul>
+              <li><a href="spring.html">봄</a></li>
+              <li><a href="summer.html">여름</a></li>
+              <li><a href="autumn.html">가을</a></li>
+              <li><a href="winter.html">겨울</a></li>
+            </ul>
+          </li>
+          <li><a href="recipe.html">이달의추천</a></li>
+          <li><a href="product.html">건강식습관</a></li>
+          <li><a href="culture.html">식문화 이야기</a></li>
+          <li><a href="event.html">축제</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Login Form Section -->
+      <section class="py-5">
+        <div class="container px-5">
+          <div class="bg-white rounded-4 p-5 shadow contact-form text-center" style="max-width: 500px; margin: auto;">
+            <div class="contact-icon mb-3">
+              <div class="rounded-circle bg-primary d-inline-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                <i class="bi bi-person-fill text-white fs-4"></i>
+              </div>
+            </div>
+
+            <section id="intro">
+                <h2>회원가입</h2>
+            </section>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 서비스이용약관 동의
+                </label>
+                <a href="#">보기</a>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 개인정보 수집·이용 안내
+                </label>
+                <a href="#">보기</a>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 행정정보 공동이용 안내
+                </label>
+                <a href="#">보기</a>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 개인정보 제3자 제공 안내
+                </label>
+                <a href="#">보기</a>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 민감정보 수집·이용 안내
+                </label>
+                <a href="#">보기</a>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" />
+                    [필수] 고유식별정보 수집·이용 안내
+                </label>
+                <a href="#">보기</a>
+            </div>
+                <p> </p>
+            <div style="border: 3px solid #0798ff; padding: 20px; border-radius: 8px; max-width: 500px; margin: 0 auto;"> 
+            <form>
+                <div class="mb-3 row">
+                    <label for="name" class="col-sm-3 col-form-label text-end pe-3">이름</label>
+                    <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name" placeholder="이름" required>
+                    </div>
+                </div>
+
+                    <p></p>
+
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end pe-3">성별</label>
+                    <div class="col-sm-9" style="display: flex; gap: 20px; align-items: center;">
+                        <label class="gender-label">
+                        <input type="radio" name="gender" value="m" />
+                        남성
+                        </label>
+                        <label class="gender-label">
+                        <input type="radio" name="gender" value="w" />
+                        여성
+                        </label>
+                    </div>
+                </div>
+                    <p></p>
+                    <div class="mb-3 row">
+                        <label for="birth" class="col-sm-3 col-form-label text-end pe-3">생년월일</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="birth" placeholder="생년월일 EX)780910" required>
+                          </div>
+                    </div>
+                    <p></p>
+
+
+                    <div class="mb-3 row">
+                        <label for="phone" class="col-sm-3 col-form-label text-end pe-3">휴대폰</label>
+                            <div class="col-sm-9">
+                                <div class="phone-group" style="display: flex; align-items: center; gap: 8px;">
+                                    <select id="phone-start" class="form-select" style="width: 100px; height: 50px;">
+                                        <option>010</option>
+                                        <option>011</option>
+                                        <option>016</option>
+                                        <option>017</option>
+                                        <option>018</option>
+                                        <option>019</option>
+                                    </select>
+                                    <input type="text" id="phone-middle" class="form-control" placeholder="앞자리" required style="width: 120px; height: 50px;" />
+                                    <span>-</span>
+                                    <input type="text" id="phone-end" class="form-control" placeholder="뒷자리" required style="width: 120px; height: 50px;" />
+                                </div>
+                            </div>
+                    </div>
+                       
+                     <p></p>
+
+                     <div class="mb-3 row">
+                        <label for="id" class="col-sm-3 col-form-label text-end pe-3">아이디</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="id" placeholder="아이디" required>
+                        </div>
+
+                    <p></p>
+
+                     <div class="mb-3 row">
+                        <label for="pw" class="col-sm-3 col-form-label text-end pe-3">비밀번호</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="pw" placeholder="비밀번호" required>
+                            </div>
+                     </div>
+
+                    <div class="mb-3 row">
+                        <label for="pwc" class="col-sm-3 col-form-label text-end pe-3">비밀번호 확인</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="pwc" placeholder="비밀번호 확인" required>
+                            </div>
+                     </div>
+
+                    <div style="width: 90vw; max-width: 1000px; margin: 0 auto;">
+                        <div class="mb-3 row">
+                            <label for="email-id" class="col-sm-3 col-form-label text-end pe-3">이메일</label>
+                                <div class="col-sm-9">
+                                    <div class="email-group" style="display: flex; align-items: center; gap: 8px;">
+                                        <input type="text" id="email-id" placeholder="이메일" required style="width: 120px; height: 50px;" />
+                                        <span>@</span>
+                                        <input type="text" id="email-domain" placeholder="직접입력" required style="width: 120px; height: 50px;" />
+                                        <select id="email-select" style="width: 120px; height: 50px;">
+                                        <option value="">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="nate.com">nate.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                     </div>
+                     <p></p>
+
+                    <div style="text-align: center; margin-top: 10px;">
+                        <input type="button" value="가입완료" onclick="
+                            (function() {
+                            alert('가입을 축하드립니다!');
+                            location.href = 'index.html';
+                            })();
+                        " />
+                    </div>
+                </form>
+                </div>
+                
+
+
+                        
+                        </div>
+                    </div>
+
+         </section>
+    </section>
+    
+   
+
+     
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style4" style="text-align: center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <section>
+              <header>
+                <h2 style="margin-bottom: 1em;">소셜미디어</h2>
+              </header>
+
+              <ul class="social" style="display: flex; justify-content: center; gap: 10px; padding: 0;">
+                <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                <li><a class="icon brands fa-line" href="#"><span class="label">Line</span></a></li>
+              </ul>
+
+              <ul class="contact" style="list-style: none; padding: 0; margin-top: 1.5em;">
+                <li><h3>Address</h3><p>Anseong</p></li>
+                <li><h3>Mail</h3><p><a href="#">4season@gmail.com</a></p></li>
+                <li><h3>Phone</h3><p>(031) 670-3114</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const select = document.getElementById('email-select');
+  const domainInput = document.getElementById('email-domain');
+
+  select.addEventListener('change', () => {
+    if (select.value === '') {
+      domainInput.value = '';
+      domainInput.style.display = 'inline-block';
+      domainInput.focus();
+    } else {
+      domainInput.value = select.value;
+    }
+  });
+</script>
+
+</body>
+</html>

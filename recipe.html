@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>이달의추천</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 960px; /* 300px * 3 + 간격 */
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      position: relative;
+      width: 300px;
+      cursor: pointer;
+    }
+
+    .portfolio-item img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* 이미지 비율 유지하면서 잘림 가능 */
+}
+
+
+    .portfolio-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #444;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .portfolio-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .portfolio-item .overlay h3 {
+      margin: 0 0 5px 0;
+      font-weight: bold;
+    }
+
+    .portfolio-item .overlay .icons a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #a67c00;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header">
+      <!-- Logo -->
+      <h1><a href="index.html">사계</a></h1>
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; padding-right: 16px; flex-wrap: wrap;">
+        <a href="login.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">로그인</a>
+        <a href="join.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">회원가입</a>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">계절</a>
+            <ul>
+              <li><a href="spring.html">봄</a></li>
+              <li><a href="summer.html">여름</a></li>
+              <li><a href="autumn.html">가을</a></li>
+              <li><a href="winter.html">겨울</a></li>
+            </ul>
+          </li>
+          <li><a href="recipe.html">이달의추천</a></li>
+          <li><a href="product.html">건강식습관</a></li>
+          <li><a href="culture.html">식문화 이야기</a></li>
+          <li><a href="event.html">축제</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="main">
+       <div class="container">
+    <header class="major">
+      <h2>이달의 추천 요리</h2>
+    </header>
+
+        <!-- Content -->
+        <article class="box post">
+          <!-- portfolio-item 6개를 portfolio div로 감싸서 3x2 배열 -->
+          <div class="portfolio">
+            <div class="portfolio-item">
+              <img src="images/k1.jpg" alt="오이냉국" />
+              <div class="overlay">
+                <h3>오이냉국</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6852492" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/k2.jpg" alt="콩국수" />
+              <div class="overlay">
+                <h3>콩국수</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6850708" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/k3.jpg" alt="두릅무침" />
+              <div class="overlay">
+                <h3>두릅무침</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6888155" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/k4.jpg" alt="강된장과 보리밥" />
+              <div class="overlay">
+                <h3>강된장과 보리밥</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6882802" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/k5.jpg" alt="가지 스테이크" />
+              <div class="overlay">
+                <h3>가지 스테이크</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6963110" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/k6.jpg" alt="비빔국수" />
+              <div class="overlay">
+                <h3>비빔국수</h3>
+                <div class="icons">
+                  <a href="#" title="더 보기">+</a>
+                  <a href="https://www.10000recipe.com/recipe/6896908" title="링크">🔗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </article>
+
+      </div>
+    </section>
+
+      
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style4" style="text-align: center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <section>
+              <header>
+                <h2 style="margin-bottom: 1em;">소셜미디어</h2>
+              </header>
+
+              <ul class="social" style="display: flex; justify-content: center; gap: 10px; padding: 0;">
+                <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                <li><a class="icon brands fa-line" href="#"><span class="label">Line</span></a></li>
+              </ul>
+
+              <ul class="contact" style="list-style: none; padding: 0; margin-top: 1.5em;">
+                <li><h3>Address</h3><p>Anseong</p></li>
+                <li><h3>Mail</h3><p><a href="#">4season@gmail.com</a></p></li>
+                <li><h3>Phone</h3><p>(031) 670-3114</p></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

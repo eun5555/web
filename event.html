@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>관련행사</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .portfolio-hover {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(24, 188, 156, 0.7);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .portfolio-item:hover .portfolio-hover {
+      opacity: 1;
+    }
+    .portfolio-caption {
+      text-align: center;
+      padding: 15px 0;
+    }
+    .portfolio-caption-heading {
+      font-weight: bold;
+    }
+    .portfolio-caption-subheading {
+      font-style: italic;
+      color: gray;
+    }
+  </style>
+</head>
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header">
+      <h1><a href="index.html">사계</a></h1>
+      <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; padding-right: 16px; flex-wrap: wrap;">
+        <a href="login.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">로그인</a>
+        <a href="join.html" class="button" style="background-color:#63d46f; color: white; font-size: 10px; padding: 4px 8px;">회원가입</a>
+      </div>
+
+     <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">계절</a>
+            <ul>
+              <li><a href="spring.html">봄</a></li>
+              <li><a href="summer.html">여름</a></li>
+              <li><a href="autumn.html">가을</a></li>
+              <li><a href="winter.html">겨울</a></li>
+            </ul>
+          </li>
+          <li><a href="recipe.html">이달의추천</a></li>
+          <li><a href="product.html">건강식습관</a></li>
+          <li><a href="culture.html">식문화 이야기</a></li>
+          <li><a href="event.html">축제</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+    
+    </section>
+
+    <!-- Portfolio Section -->
+     
+    <section id="main">
+       <div class="container">
+    <header class="major">
+      <h2>음식 관련 축제 목록</h2>
+    </header>
+      <div class="container">
+        
+        <div class="row">
+
+          <!-- Item 1 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" src="images/1.png" alt="고창" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">고창</div>
+                <div class="portfolio-caption-subheading text-muted">복분자와 수박축제</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" src="images/f2.jpg" alt="금산" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">금산</div>
+                <div class="portfolio-caption-subheading text-muted">삼계탕 축제</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" src="images/f3.jpg" alt="태백" />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">태백</div>
+                <div class="portfolio-caption-subheading text-muted">산나물 축제</div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin: 30px 0;">
+                            <em title="현재목록" style="font-weight: bold; font-size: 18px; margin: 0 5px;">
+                                <span>1</span>
+                            </em>
+                            <a href="event2.html" style="margin: 0 5px; text-decoration: none;">2</a>
+                        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style4" style="text-align: center;">
+      <div class="container">
+        <section>
+          <header>
+            <h2 style="margin-bottom: 1em;">소셜미디어</h2>
+          </header>
+          <ul class="social" style="display: flex; justify-content: center; gap: 10px; padding: 0;">
+            <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+            <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+            <li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+            <li><a class="icon brands fa-line" href="#"><span class="label">Line</span></a></li>
+          </ul>
+          <ul class="contact" style="list-style: none; padding: 0; margin-top: 1.5em;">
+            <li><h3>Address</h3><p>Anseong</p></li>
+            <li><h3>Mail</h3><p><a href="#">4season@gmail.com</a></p></li>
+            <li><h3>Phone</h3><p>(031) 670-3114</p></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ✅ 모달들 -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">고창</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/1.png" class="img-fluid mb-3" alt="고창" width="150px" />
+          <h5>일정</h5>
+          <p>2025.06.20 ~ 2025.06.22</p>
+          <h5>장소</h5>
+          <p>전북특별자치도 고창군 아산면 선운사로 242-86</p>
+          <h5>가격</h5>
+          <p>무료</p>
+          <h5>체험프로그램</h5>
+          <p>물총싸움(고창판 흠뻑쇼), 장애물 3종경기, 장어잡기 행사, 수박 빨리먹기 대회, SNS이벤트(페이스페인팅), 수박카빙대회 등</p>
+          <h5>문화예술 프로그램</h5>
+          <p>신나는 예술버스(퓨전국악, 솜사탕 공연, 쟈니컴퍼니, 복고댄스), 키즈콘서트(버블&마술), 버스킹</p>
+          <h5>농특산물 판매 행사</h5>
+          <p>복분자, 수박, 장어 판매, 농특산품 판매행사, 체험부스 운영</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">금산</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/f2.jpg" class="img-fluid mb-3" alt="고창" width="150px" />
+          <h5>일정</h5>
+          <p>2025.07.18 ~ 2025.07.20</p>
+          <h5>장소</h5>
+          <p>충청남도 금산군 금산읍 인삼광장로 30 금산세계인삼엑스포 광장</p>
+          <h5>가격</h5>
+          <p>입장료 무료 (일부 유료)</p>
+          <h5>판매코너</h5>
+          <p>금산 삼계탕 판매코너 등</p>
+          <h5>체험행사</h5>
+          <p>금산 약초 체험관, 가족여름문화체험 등</p>
+          <h5>공연경연</h5>
+          <p>여름쿨(cool)음악회, 문화예술열린마당 등</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">태백</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/f3.jpg" class="img-fluid mb-3" alt="고창" width="150px" />
+          <h5>일정</h5>
+          <p>2025.05.02 ~ 2025.05.04</p>
+          <h5>장소</h5>
+          <p>강원특별자치도 태백시 장성동 159-31</p>
+          <h5>가격</h5>
+          <p>무료</p>
+          <h5>개막행사</h5>
+          <p>개회선언, 풍년기원 소원등 점등식, 축하공연</p>
+          <h5>공연행사</h5>
+          <p>버스킹 공연, 지역 가수 공연, 지역 동아리 공연 등</p>
+          <h5>판매 및 먹거리 행사</h5>
+          <p>지역 농특산물 가공품 판매장 운영, 산나물 활용 먹거리장 운영</p>
+          <h5>체험행사</h5>
+          <p>건강 체험 프로그램, 산나물 팔씨름 대회, 산나물 골든벨 등</p>
+          <h5>홍보관 및 산나물 전시장</h5>
+          <p>산나물 화분 및 사진 전시, 지역 기관 및 농업 단체 홍보</p>
+          <h5>프리마켓 및 키즈존</h5>
+          <p>미로놀이, 전통놀이 등 어린이날을 맞이한 어린이 프로그램 운영</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ✅ Bootstrap 5 JS (중복되지 않게 확인) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
